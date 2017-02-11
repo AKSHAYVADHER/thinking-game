@@ -18,9 +18,9 @@ int numbers[5][16]={
 		{8,9,10,11,12,13,14,15,24,25,26,27,28,29,30,31},
 		{16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31}};
 cout<<endl;
-int sum,num;
+int sum=0,num;
 int aa;
-for(int y=0;y<=4;y++){
+for(int y=0;y<=4;y++){ game:
 for(int x=0;x<=15;x++)
 {
 	int sum;
@@ -37,17 +37,22 @@ cout<<endl;
 cout<<endl;
 cout<<"CAN YOU SEE YOUR NUMBER    IF YES PRESS 1 OTHERWISE 0"<<endl;
 cin>>num;
+system("cls");
 cout<<endl;
 cout<<endl;
-while(num==1 || num==0)
-{ if(num==1)  {
-	sum+=numbers[y][0];}  }
+
+ if(num==1)  {
+	sum+=numbers[y][0];}
+	else if(num==0){ continue; }
+	else{ cout<<"Enter Valid Number"<<endl;  goto game;}
 cout<<endl;
 }
 cout<<endl;
 cout<<endl;
-cout<<"THE NUMBER YOU THOUGHT WAS  ------------   "<<sum<<"   ----------"<<endl;
+cout<<"THE NUMBER YOU THOUGHT WAS       ------------   "<<sum<<"   ----------"<<endl;
 cout<<"          AKSHAYB3129@GMAIL.COM";
-Sleep(5000);
+Sleep(3000);
 }
+
+
 
