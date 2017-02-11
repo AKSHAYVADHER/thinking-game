@@ -39,9 +39,9 @@ cout<<"CAN YOU SEE YOUR NUMBER    IF YES PRESS 1 OTHERWISE 0"<<endl;
 cin>>num;
 cout<<endl;
 cout<<endl;
-if(num==1)
-{
-	sum+=numbers[y][0];}
+while(num==1 || num==0)
+{ if(num==1)  {
+	sum+=numbers[y][0];}  }
 cout<<endl;
 }
 cout<<endl;
